@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Contact</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      <!--header section start -->
+      <div class="header_section">
+         <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                     </li>
+
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!--header section end -->
+ 
+      <!--menu-->
+      <script>
+        let activeSection = null;
+
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            
+            // If there's an active section and it's not the one we're clicking
+            if (activeSection && activeSection !== section) {
+                activeSection.classList.remove('active');
+            }
+            
+            // Toggle the clicked section
+            section.classList.toggle('active');
+            
+            // Update the active section
+            activeSection = section.classList.contains('active') ? section : null;
+        }
+    </script>
+    <div class="menu-section">
+        <!-- Chicha Section -->
+        <div class="menu-category" onclick="toggleSection('chicha')">Chicha</div>
+        <div class="menu-items" id="chicha">
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Pomme Double" />
+                <div class="item-name">Pomme Double</div>
+                <div class="item-description">Double pomme intense et rafraîchissante</div>
+                <div class="item-price">18 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Menthe Glaciale" />
+                <div class="item-name">Menthe Glaciale</div>
+                <div class="item-description">Goût mentholé extra fort</div>
+                <div class="item-price">20 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Mix Fruits" />
+                <div class="item-name">Mix Fruits</div>
+                <div class="item-description">Mélange de fruits exotiques</div>
+                <div class="item-price">22 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Love 66" />
+                <div class="item-name">Love 66</div>
+                <div class="item-description">Melon, fruit de la passion, menthe</div>
+                <div class="item-price">25 DT</div>
+            </div>
+        </div>
+
+        <!-- Café Section -->
+        <div class="menu-category" onclick="toggleSection('cafe')">Café</div>
+        <div class="menu-items" id="cafe">
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Café Turc" />
+                <div class="item-name">Café Turc</div>
+                <div class="item-description">Café traditionnel finement moulu</div>
+                <div class="item-price">5 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Cappuccino" />
+                <div class="item-name">Cappuccino</div>
+                <div class="item-description">Espresso avec mousse de lait</div>
+                <div class="item-price">7 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Café Crème" />
+                <div class="item-name">Café Crème</div>
+                <div class="item-description">Café avec crème fouettée</div>
+                <div class="item-price">6 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Latte Caramel" />
+                <div class="item-name">Latte Caramel</div>
+                <div class="item-description">Café au lait, sirop de caramel</div>
+                <div class="item-price">8 DT</div>
+            </div>
+        </div>
+
+        <!-- Restaurant Section -->
+        <div class="menu-category" onclick="toggleSection('restaurant')">Restaurant</div>
+        <div class="menu-items" id="restaurant">
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Pizza Libanaise" />
+                <div class="item-name">Pizza Libanaise</div>
+                <div class="item-description">Sauce tomate, viande hachée, poivrons</div>
+                <div class="item-price">25 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Makloub Special" />
+                <div class="item-name">Makloub Spécial</div>
+                <div class="item-description">Thon, œuf, fromage, olives</div>
+                <div class="item-price">14 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Chawarma Assiette" />
+                <div class="item-name">Assiette Chawarma</div>
+                <div class="item-description">Viande marinée, frites, salade</div>
+                <div class="item-price">22 DT</div>
+            </div>
+        </div>
+
+        <!-- Plats Section -->
+        <div class="menu-category" onclick="toggleSection('plats')">Plats</div>
+        <div class="menu-items" id="plats">
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Escalope Crème" />
+                <div class="item-name">Escalope à la Crème</div>
+                <div class="item-description">Escalope de poulet, sauce crémeuse</div>
+                <div class="item-price">28 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Pâtes Fruits de Mer" />
+                <div class="item-name">Pâtes Fruits de Mer</div>
+                <div class="item-description">Pâtes, crevettes, moules, calamars</div>
+                <div class="item-price">32 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Gratin Fruits de Mer" />
+                <div class="item-name">Gratin de Fruits de Mer</div>
+                <div class="item-description">Fruits de mer, béchamel, fromage gratiné</div>
+                <div class="item-price">35 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Couscous Royal" />
+                <div class="item-name">Couscous Royal</div>
+                <div class="item-description">Couscous, agneau, poulet, merguez</div>
+                <div class="item-price">40 DT</div>
+            </div>
+        </div>
+
+        <!-- Petit Déjeuner Section -->
+        <div class="menu-category" onclick="toggleSection('petit-dej')">Petit Déjeuner</div>
+        <div class="menu-items" id="petit-dej">
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Petit Déj Tunisien" />
+                <div class="item-name">Petit Déjeuner Tunisien</div>
+                <div class="item-description">Œufs, olives, fromage, pain</div>
+                <div class="item-price">15 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Crêpes Sucrées" />
+                <div class="item-name">Crêpes Sucrées</div>
+                <div class="item-description">Nutella, banane, amandes</div>
+                <div class="item-price">12 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Omelette Fromage" />
+                <div class="item-name">Omelette Fromage</div>
+                <div class="item-description">Œufs, fromage, champignons</div>
+                <div class="item-price">10 DT</div>
+            </div>
+        </div>
+
+        <!-- Boissons Section -->
+        <div class="menu-category" onclick="toggleSection('boissons')">Boissons</div>
+        <div class="menu-items" id="boissons">
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Jus Orange" />
+                <div class="item-name">Jus d'Orange Frais</div>
+                <div class="item-description">Pressé à la minute</div>
+                <div class="item-price">7 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Citronnade" />
+                <div class="item-name">Citronnade Maison</div>
+                <div class="item-description">Citron frais, menthe</div>
+                <div class="item-price">6 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Smoothie Fruits" />
+                <div class="item-name">Smoothie Mixed Fruits</div>
+                <div class="item-description">Fraise, banane, mangue</div>
+                <div class="item-price">9 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Milkshake" />
+                <div class="item-name">Milkshake</div>
+                <div class="item-description">Vanille, chocolat ou fraise</div>
+                <div class="item-price">8 DT</div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/300" alt="Thé à la menthe" />
+                <div class="item-name">Thé à la Menthe</div>
+                <div class="item-description">Thé vert, menthe fraîche</div>
+                <div class="item-price">4 DT</div>
+            </div>
+        </div>
+
+    </div>
+
+      <!--menu end-->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6">
+                  <h3 class="useful_text">About</h3>
+                  <p class="footer_text">a small startup we offred for you many developpement product with a good price </p>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h3 class="useful_text">Menu</h3>
+                  <div class="footer_menu">
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="useful_text">Contact Us</h1>
+                  <div class="location_text">
+                     <ul>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_10">Address : Rades ,Ben arous , Tunisia</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">Call : +216 56053883</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">Email : Alielmizouri@gmail.com</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">ALL Right reserved <a href="">Mizouri</a></p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>     
+   </body>
+</html>
